@@ -1,0 +1,238 @@
+/* Betűtípusok */
+
+@font-face {
+    font-family: 'base';
+    src: url('fonts/base.ttf');
+}
+
+@font-face {
+    font-family: 'threecheers';
+    src: url('fonts/threecheers.ttf');
+}
+
+@font-face {
+    font-family: 'bullets';
+    src: url('fonts/bullets.TTF');
+}
+
+@font-face {
+    font-family: 'blackparade';
+    src: url('fonts/blackparade.otf');
+}
+
+@font-face {
+    font-family: 'dangerdays';
+    src: url('./fonts/dangerdays.ttf');
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-image: url("img/ash-background.png");
+    background-repeat: repeat-y;
+    background-position: top center;
+    background-size: 100% auto;
+    height: 11000px;
+    font-family: 'base';
+}
+
+#mcrheaderlogo {
+    padding-left: 30%;
+    padding-top: 10%;
+}
+
+header {
+    width: 70%;
+    height: fit-content;
+    margin: auto auto;
+    margin-bottom: 115px;
+}
+
+nav {
+    padding-top: 50px;
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+
+}
+
+nav li {
+    list-style-type: none;
+}
+
+nav a {
+    display: flex;
+    color: white;
+    font-weight: 800;
+    text-decoration: none;
+    font-size: 20pt;
+}
+
+.nav a:hover {
+    font-family: 'bullets';
+    letter-spacing: 2.9px;
+    transform: scale(1);
+}
+
+.album {
+    width: 95%;
+    height: fit-content;
+    border: 1.33px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 135px;
+    backdrop-filter: blur(8px);
+    border-radius: 4px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.69), 
+    0 12px 40px rgba(0, 0, 0, 0.08); /* Apple-szerű box-shadow, online találtam. */
+    display: flow-root;
+    color: white;
+}
+
+#pepemarch {
+    width: 300px;
+    height: 450px;
+    margin-left: 690px;
+}
+
+.albumh1 {
+    padding-left: 25px;
+    font-size: 24pt;
+}
+
+.yt {
+    padding-left: 20%; padding-bottom: 25px; border-radius: 8px;
+}
+
+.cover {
+    float: right;
+    padding: 25px 25px;
+    border-radius: 28px;
+    width: 450px;
+}
+
+.iframes {
+    margin-left: 10%;
+    padding-bottom: 25px;
+}
+
+.album p {
+    font-size: 16pt;
+    padding: 15px 15px;
+    line-height: 1.4;
+    color: white;
+}
+
+.album q {
+    display: block;
+    width: 400px;
+    height: fit-content;
+    margin: auto auto;
+    background-color: rgb(9, 28, 69);
+    font-size: 16pt;
+    color: white;
+    padding: 33px 33px;
+    line-height: 1.4;
+    border-radius: 28px;
+    border-left: 19px solid rgb(56, 30, 149);
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+
+#bullets h1 {
+    font-family: 'bullets';
+}
+
+table {
+    margin: 5%;
+    background-color: rgb(127, 127, 127);
+}
+
+table, tr, td, th {
+    border-collapse: collapse;
+    border: 2px solid black;
+    padding: 5px;
+}
+
+td {
+    font-size: 16pt;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+th {
+    font-size: 20pt;
+    text-decoration: underline;
+}
+
+#threecheers h1 {
+    font-family: 'threecheers';
+}
+
+#blackparade h1 {
+    font-family: 'blackparade';
+    letter-spacing: 3;
+}
+
+#dangerdays h1 {
+    font-family: 'dangerdays';
+}
+
+.album li {
+    font-size: 16pt;
+    padding: 15px 15px;
+    line-height: 1.4;
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    table {
+        margin: 2%;
+    }
+
+    .iframes {
+        width: auto;
+    }
+
+    .cover {
+        width: 85%;
+    }
+
+    nav {
+        width: auto;
+        flex-wrap: wrap;
+    }
+    
+    .yt {
+        display: flex;
+        width: auto;
+        height: auto;
+        justify-content: center;
+        padding-left: 10%; 
+        padding-bottom: 25px; 
+        border-radius: 8px;
+    }
+    #mcrheaderlogo {
+        display: block;
+        width: 90%;
+        height: auto;
+        padding: 0;
+        margin: 15px auto;
+    }
+
+    #pepemarch {
+        display: block;
+        width: 70%;
+        height: auto;
+        padding: 0;
+        margin: 15px auto;
+    }
+
+    .album q {
+        width: 240px;
+    }
+}
